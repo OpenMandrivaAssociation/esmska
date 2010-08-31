@@ -3,11 +3,10 @@ Version:        0.20.0
 Release:        %mkrel 1
 Summary:        Sending SMS over the Internet
 Group:          Networking/Other
-License:        GPL
+License:        GPLv3
 URL:            http://code.google.com/p/esmska/
 
 Source:         %{name}-%{version}.tar.gz
-Source1:        %{name}.desktop
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 Requires:       jre >= 1.6.0
@@ -19,22 +18,17 @@ BuildRequires:	desktop-file-utils
 
 %description
 Program for sending SMS over the Internet.
- * Send SMS to various operators (local or international) 
- * Supports all common operating systems (Linux, Windows, Mac OS, etc.) 
+ * Send SMS to various operators international
  * Free, under free/open-source licence GNU AGPL 
  * Import contacts from other programs (DreamCom) and formats (vCard) 
  * Send SMS to multiple recipients at once 
  * History of sent messages 
  * Pluggable operator system - easy to provide support for more operators directly by users 
  * Extensive possibilities of changing appearance 
- * Many other planned features
 
 %package javadoc
 Summary:        Javadoc for %{name}
 Group:          Development/Libraries/Java
-Requires(post): /bin/ln
-Requires(post): /bin/rm
-Requires(postun): /bin/rm
 
 %description javadoc
 This package contains a javadoc for %{name}.
