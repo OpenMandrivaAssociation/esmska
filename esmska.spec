@@ -4,7 +4,7 @@ Release:        %mkrel 1
 Summary:        Sending SMS over the Internet
 Group:          Networking/Other
 License:        GPLv3
-URL:            http://code.google.com/p/esmska/
+URL:            https://code.google.com/p/esmska/
 
 Source:         %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
